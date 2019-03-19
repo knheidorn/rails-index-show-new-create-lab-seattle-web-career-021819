@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add New Coupon</title>
+  </head>
+  <body>
+    <h1>Create New Coupon</h1>
+    <h2>Coupon Form</h2>
+    <ul>
+      <%= form_for(@coupon) do |f| %>
+        <li>
+          <h4><%= f.label :coupon_code %></h4>
+          <p><%= f.text_field :coupon_code %></p>
+        </li>
+        <li>
+          <h4><%= f.label :store %></h4>
+          <p><%= f.text_field :store %></p>
+        </li>
+          <%= f.submit "Submit Coupon" %>
+      <% end %>
+    </ul>
+  </body>
+</html>
